@@ -1,51 +1,19 @@
 // Quiz Questions
-const questions = [
-{
-    question: "Which of the following is a proper example of a data type?",
-    options: [
-        "Boolean",
-        "String",
-        "Integer",
-        "All of the above"
-    ],
-    answer: "All of the above"
-},
-{
-    question: "What is a collection of data elements called?",
-    options: [
-        "A Collelement",
-        "An Array",
-        "A Variable",
-        "A For-Loop"
-    ],
-    answer: ""
-},
-{
-    question: "A For-Loop is used to run a piece of code more than once.",
-    options: [
-        "True",
-        "False"
-    ],
-    answer: "True"
-},
-{
-    question: "What does API stand for?",
-    options: [
-        "Artificial Programming Intelligence",
-        "Apples Pineapples & Insects",
-        "Application Programming Interface",
-        "Application Pogging Interweb"
-    ],
-    answer: "Application Programming Interface"
-},
-{
-    question: "Select the correct git command to create a new empty file.",
-    options: [
-        "cd",
-        "mkdir",
-        "touch",
-        "ls"
-    ],
-    answer: "touch"
-}
-]
+//Quiz Questions
+var questions = [
+    "Which of the following is a proper example of a data type?",
+    "What is a collection of data elements called?",
+    "A For-Loop is used to run a piece of code more than once.",
+    "What does API stand for?",
+    "Select the correct git command to create a new empty file."
+];
+//Quiz Options
+var options = [
+    ["Boolean", "String", "Integer", "All of the above"]
+    ["A Collelement", "An Array", "A Variable", "A For-Loop"]
+    ["True", "False"]
+    ["Artificial Programming Intelligence", "Apples Pineapples & Insects", "Application Programming Interface", "Application Pogging Interweb"]
+    ["cd", "mkdir", "touch", "ls"]
+];
+//Correct Quiz Answers
+var answers = ["All of the above", "An Array", "True", "Application Programming Interface", "touch"];
