@@ -6,31 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Website Title -->
-    <title>Qode Quiz</title>
+    <title>Quode Quiz</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./assets/images/MagGlass.png">
+    <link rel="icon" type="image/x-icon" href="./assets/images/QuodeQuizFavicon.png">
     <!-- Stylesheet connection -->
     <link rel = "stylesheet" href="./assets/style.css">
     <!-- Javascript connection -->
     <script src="./assets/script.js"></script>
 </head>
 <!-- HTML Body -->
-<body>
-    <!-- Header -->
-    <div class="qq-header">
-        <strong>Qode Quiz</strong>
-    </div>
-    <!-- Quiz Intro. Text -->
-    <div class="quiz-intro">
-    Answer all the questions correctly before the time runs out!
-    </div>
-    <!-- Button -->
-    <div class="container">
-        <div class="start">
-         <button id="start-btn">Start</button>
+    <body>
+        <!-- Header -->
+        <div class="qq-header">
+            <strong>Quode Quiz</strong>
         </div>
-    </div>
-    
+        <!-- Quiz intro -->
+        <div class="quiz-intro" id="quiz-intro">
+            <div class="qi-text">
+                Answer all the questions correctly before the time runs out!
+            </div>
+            <!-- Start Button -->
+            <div class="start" id="start">
+                <button id="start-btn">Start</button>
+            </div>
+        </div>
+        <!-- Quiz -->
+        <div class="quiz" id="quiz" style="display: none;">
+            <h2 id="questions"></h2>
+            <div id="options">
+            <button class="option"></button>
+            <button class="option"></button>
+            <button class="option"></button>
+            <button class="option"></button>
+            </div>
+        </div>
+        
+        <!-- Game Over -->
+        <div class="game-over" id="game-over" style="display: none;">
+            <h1>Game Over!</h1>
+            <p id="score"></p>
+            <form id="score-form">
+            <label for="initials">Enter your initials:</label>
+            <input type="text" id="initials" maxlength="3" />
+            <button type="submit" id="submit-btn">Submit</button>
+            </form>
 
-</body>
+        <!-- High Scores -->
+            <h2>High Scores:</h2>
+            <ul id="high-scores"></ul>
+        </div>  
+    </body>
 </html>
