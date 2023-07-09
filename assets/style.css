@@ -2,23 +2,31 @@
 :root {
     --text: #fbfddf;
     --buttons: #d8621c;
-    --background:  #63bdcb;
+    --background: #63bdcb;
     --accent: #cbeef5;
     --borders: #05254b;
-}
+  }
   
-body {
+  body {
     background-color: var(--background);
-} 
-/* header styling */
-.qq-header {
+  }
+  
+  /* header styling */
+  .qq-header {
     font-size: 64px;
     padding: 10px;
     text-align: center;
     color: var(--text);
-}
-/* button styling */
-#start-btn{
+  }
+  
+  .qi-text {
+    font-size: 24px;
+    text-align: center;
+    color: var(--text);
+  }
+  
+  /* button styling */
+  #start-btn {
     border-radius: 8px;
     padding: 15px 32px;
     font-size: 24px;
@@ -27,4 +35,48 @@ body {
     border-color: var(--buttons);
     color: var(--text);
     cursor: pointer;
-}
+  }
+  
+  .container {
+    height: 200px;
+    position: relative;
+  }
+  
+  .start {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  /* quiz styling */
+  #question {
+    border-radius: 8px;
+    padding: 15px 32px;
+    font-size: 24px;
+    text-align: center;
+    background-color: var(--buttons);
+    border-color: var(--buttons);
+    color: var(--text);
+  }
+  
+  #options {
+    border-radius: 8px;
+    padding: 15px 32px;
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--buttons);
+    border-color: var(--buttons);
+    color: var(--text);
+    cursor: pointer;
+  }
+  
+  .game-over {
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+    color: var(--text);
+  }
+  
